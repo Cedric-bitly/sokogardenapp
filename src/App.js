@@ -15,7 +15,7 @@ function App() {
        </header>
        {/* Below are our different routes together with the rendered components*/}
        <Routes>
-         <Route path = '/' element = {<Getproducts />} />
+         <Route path = '/getproducts' element = {<Getproducts />} />
          <Route path = '/addproducts' element = {<Addproducts />} /> 
          <Route path = '/signup' element = {<Signup />} />
          <Route path = '/signin' element = {<Signin />} />

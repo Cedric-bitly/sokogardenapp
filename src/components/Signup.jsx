@@ -34,7 +34,7 @@ const Signup = () => {
       formdata.append("phone", tel)
 
       // by use of axios we can access the method POST
-      const response =await axios.post("https://stormyz22a.alwaysdata.net/api/signup", formdata)
+      const response =await axios.post("https://cedric22a.alwaysdata.net/api/signup", formdata)
 
       // setback the loading  to default
       setLoading("");
