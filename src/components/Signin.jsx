@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signin = () => {
 
@@ -93,7 +93,9 @@ const Signin = () => {
 
            <input type="submit"
            value="Sign In" 
-           className='btn btn-secondary'/>
+           className='btn btn-secondary'/> <br /><br />
+
+            Don't have an account? <Link to={'/signup'}>Signup</Link>
          </form>
          </div>
     </div>
