@@ -40,8 +40,11 @@ const Signin = () => {
 
       // check whether the user exists as part of your response from the API
       if(response.data.user){
+         localStorage.setItem("user", JSON.stringify(response.data.user));
+         localStorage.setItem("token", response.data.token);
+
         // if the user exists, update the success hook with a message
-        // setSuccess("Login successful")
+         setSuccess("Login successful")
         // if it is successful, redirect the user to another page
         navigate("/getproducts");
       }
@@ -98,6 +101,7 @@ const Signin = () => {
 }
 
 export default Signin;
+
 
 
 
