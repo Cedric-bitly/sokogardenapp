@@ -58,6 +58,13 @@ const [product_photo, setProductphoto] = useState("");
       setProductdescription("");
       setProductcost("");
       setProductphoto("");
+
+      e.target.reset()
+
+      setTimeout(() => {
+        setSuccess("");
+      }, 5000);
+
     }
     catch(error){
       //set the loading hook back to default
