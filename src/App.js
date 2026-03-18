@@ -5,6 +5,7 @@ import Addproducts from './components/Addproducts';
 import Signup from './components/Signup';
 import Signin from './components/Signin';
 import Notfound from './components/Notfound';
+import Makepayment from './components/Makepayment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
          <Route path = '/addproducts' element = {<Addproducts />} /> 
          <Route path = '/signup' element = {<Signup />} />
          <Route path = '/signin' element = {<Signin />} />
+         <Route path = '/makepayment' element = {<Makepayment />} />
          <Route path = '/*' element = {<Notfound />} />
+        
        </Routes>
     </div>
     </Router>
