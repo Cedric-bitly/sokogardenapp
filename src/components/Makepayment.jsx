@@ -54,6 +54,11 @@ const Makepayment = () => {
 
     }
 
+      // Safety check - if product doesn't exist, show loading or error
+      if (!product) {
+       return <div className="text-center mt-5"><h3>Loading product details...</h3></div>;
+    }
+
   return (
     <div className='row justify-content-center'>
         {/* <Button className='btn btn-primary '>Back to Products</Button> */}

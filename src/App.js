@@ -14,6 +14,13 @@ function App() {
        <header className="App-header">
          <h1>Welcome to Sokogarden</h1>
        </header>
+       <nav>
+        {/* link to the different routes */}
+        <Link to = "/getproducts" className='btn btn-primary m-2'>Home</Link>
+        <Link to = "/addproducts" className='btn btn-secondary m-2'>Add Products</Link>
+        <Link to = "/signin" className='btn btn-info m-2'>Sign In</Link>
+        <Link to = "/signup" className='btn btn-success m-2'>Sign Up</Link>
+       </nav>
        {/* Below are our different routes together with the rendered components*/}
        <Routes>
          <Route path = '/getproducts' element = {<Getproducts />} />
